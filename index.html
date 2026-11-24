@@ -24,11 +24,14 @@
     .card h2 { margin: 0 0 .5rem; font-size: 1.7rem; }
     .card p { margin: 0; color: var(--muted); }
     .card a { display: inline-block; margin-top: 1.5rem; color: var(--lime); font-weight: 750; text-decoration-thickness: .12em; text-underline-offset: .2em; }
+    .product-logo { display: block; width: min(220px, 100%); height: 46px; object-fit: contain; object-position: left center; margin-bottom: 1rem; }
     .planned { opacity: .82; }
     .planned a { color: var(--muted); cursor: default; }
     footer { padding: 1.5rem 0 2.5rem; border-top: 1px solid var(--line); color: var(--muted); }
     footer a { color: var(--cyan); }
-    @media (max-width: 680px) { .wrap { width: min(100% - 2rem, 1100px); } main { padding-top: 4rem; } .grid { grid-template-columns: 1fr; margin-top: 3rem; } }
+    @media (max-width: 680px) { .wrap { width: calc(100% - 2rem); max-width: 350px; min-width: 0; } main { padding-top: 4rem; } .grid { grid-template-columns: 1fr; margin-top: 3rem; min-width: 0; } .lede, .card { max-width: 100%; min-width: 0; overflow-wrap: anywhere; } }
+    @media (max-width: 500px) { .wrap { max-width: 300px; margin-left: min(calc((100vw - 300px) / 2), 45px); margin-right: auto; } }
+    @media (max-width: 360px) { .wrap { max-width: 280px; margin-left: min(calc((100vw - 280px) / 2), 20px); margin-right: auto; } }
   </style>
 </head>
 <body>
@@ -42,9 +45,9 @@
         <div><p class="eyebrow">LIVE PROJECT</p><h2>Flappy AI</h2><p>A browser-based experiment where an evolving neural network learns to play Flappy Bird.</p></div>
         <a href="https://md5angy.github.io/flappy-ai/">Play Flappy AI</a>
       </article>
-      <article class="card planned">
-        <div><p class="eyebrow">COMING SOON</p><h2>RepPulse</h2><p>A focused interval timer for training. The project website is being prepared and is not available yet.</p></div>
-        <a aria-disabled="true">Website coming soon</a>
+      <article class="card">
+        <div><img class="product-logo" src="assets/reppulse-logo-transparent.png" alt="RepPulse"><p class="eyebrow">ANDROID APP / FITNESS</p><p>HIIT, Tabata, Stopwatch &amp; Countdown Timer for Android.</p><p class="status">Website online · App coming soon</p></div>
+        <a href="https://md5angy.github.io/reppulse-web/">Visit website</a>
       </article>
     </section>
   </main>

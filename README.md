@@ -26,6 +26,7 @@ Complete [`app-ads.txt`](app-ads.txt) at the repository root with the exact appr
 
 The `.nojekyll` file keeps this static site free from Jekyll processing. No commit or push is performed by this task.
 
-## Related project
+## Related projects
 
-RepPulse remains an independent project in the `reppulse-web` repository and is intended to be published at `https://md5angy.github.io/reppulse-web/`. The Miller Lab homepage labels it as coming soon until that project is actually published.
+- [RepPulse website](https://md5angy.github.io/reppulse-web/) — website online; Android app coming soon.
+- [Flappy AI](https://md5angy.github.io/flappy-ai/) — live browser experiment.
