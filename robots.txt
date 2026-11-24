@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+# app-ads.txt must remain publicly crawlable.
+Allow: /app-ads.txt
+
+Sitemap: https://md5angy.github.io/sitemap.xml
